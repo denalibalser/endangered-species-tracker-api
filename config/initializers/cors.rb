@@ -1,0 +1,12 @@
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins 'http://localhost:3002'
+      resource '*', headers: :any, methods: [:get, :post, :patch, :put]
+    end
+
+    # configuration for deplayed version of app:
+    # allow do
+    #     origins 'https://endangered-species-tracker-netlify.com'
+    #     resource '*', headers: :any, methods: [:get, :post, :patch, :put]
+    #   end
+  end
