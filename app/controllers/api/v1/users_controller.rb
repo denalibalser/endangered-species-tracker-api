@@ -4,9 +4,14 @@ class Api::V1::UsersController < ApplicationController
     # def home 
     #     render json: { status: 200 }
     # end 
-    
+
     def create 
-        @user = User.create(user_params)
+        @user = User.new(user_params)
+        if @user.save
+            render json: { status: 201, user: @user, logged_in: true } 
+        else 
+            render json: { status: 500, message: "There was an error in creating your account."}
+        end 
         render json: @user
     end 
     
@@ -18,7 +23,7 @@ class Api::V1::UsersController < ApplicationController
     private 
 
     def user_params
-        params.require(:user).permit(:username, :first_name, :last_name, :password)
+        params.require(:user).permit(:username, :first_name, :last_name, :password, :password_confirmation)
     end
 
 end
