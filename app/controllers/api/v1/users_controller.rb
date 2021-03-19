@@ -13,7 +13,6 @@ class Api::V1::UsersController < ApplicationController
         else 
             render json: { status: 500, message: "There was an error in creating your account."}
         end 
-        render json: @user
     end 
     
     def show 
