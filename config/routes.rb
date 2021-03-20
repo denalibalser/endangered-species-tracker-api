@@ -18,7 +18,7 @@ Rails.application.routes.draw do
     namespace :v1 do 
       resources :sessions, only: [:create]  #add :logout?
       get '/logged_in', to: 'sessions#logged_in'
-      delete 'logout', to: 'sesssions#logout'
+      delete 'logout', to: 'sessions#logout'
     end 
   end
 
