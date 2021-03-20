@@ -1,7 +1,10 @@
+#combine routes into one api/v1 namespace 
+
 Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
       resources :users, only: [:create]
+      
     end
   end 
   
@@ -13,8 +16,10 @@ Rails.application.routes.draw do
 
   namespace :api do 
     namespace :v1 do 
-      resources :sessions, only: [:create] #add :logout?
-    end
-  end 
+      resources :sessions, only: [:create]  #add :logout?
+      get '/logged_in', to: 'sessions#logged_in'
+      delete 'logout', to: 'sesssions#logout'
+    end 
+  end
 
 end
