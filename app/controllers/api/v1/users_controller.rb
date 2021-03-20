@@ -1,10 +1,6 @@
 class Api::V1::UsersController < ApplicationController
     #add before_action's for authorization 
 
-    # def home 
-    #     render json: { status: 200 }
-    # end 
-
     def create 
         @user = User.new(user_params)
         if @user.save
