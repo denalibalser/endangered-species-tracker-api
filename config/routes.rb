@@ -10,13 +10,13 @@ Rails.application.routes.draw do
   
   namespace :api do 
     namespace :v1 do 
-      resources :animal_cards
+      resources :animal_cards #may need these routes nested under user 
     end
   end 
 
   namespace :api do 
     namespace :v1 do 
-      resources :sessions, only: [:create]  #add :logout?
+      resources :sessions, only: [:create]  
       get '/logged_in', to: 'sessions#logged_in'
       delete 'logout', to: 'sessions#logout'
     end 
