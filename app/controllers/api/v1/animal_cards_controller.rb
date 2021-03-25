@@ -14,7 +14,9 @@ class Api::V1::AnimalCardsController < ApplicationController
     def index 
         @animal_cards = AnimalCard.all
 
-        render json: { status: 201, animal_cards: @animal_cards}
+
+        render json: @animal_cards
+        #{ status: 201, animal_cards: @animal_cards}
     end 
 
     private 
