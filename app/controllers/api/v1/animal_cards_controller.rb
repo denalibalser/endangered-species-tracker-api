@@ -14,9 +14,14 @@ class Api::V1::AnimalCardsController < ApplicationController
     def index 
         @animal_cards = AnimalCard.all
 
-
         render json: @animal_cards
         #{ status: 201, animal_cards: @animal_cards}
+    end 
+
+    def destroy 
+        @animal_card = AnimalCard.find_by_id(params[:id])
+        
+        @animal_card.destroy
     end 
 
     private 
