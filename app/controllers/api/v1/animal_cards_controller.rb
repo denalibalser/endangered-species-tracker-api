@@ -20,8 +20,9 @@ class Api::V1::AnimalCardsController < ApplicationController
 
     def destroy 
         @animal_card = AnimalCard.find_by_id(params[:id])
-        
         @animal_card.destroy
+
+        render json: {animal_card: @animal_card}
     end 
 
     private 
