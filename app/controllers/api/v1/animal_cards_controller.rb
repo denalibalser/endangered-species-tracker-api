@@ -4,10 +4,9 @@ class Api::V1::AnimalCardsController < ApplicationController
         @animal_card = AnimalCard.new(animal_card_params)
 
         if @animal_card.save
-            # @animal_card.user_id = current_user.id
             render json: { status: 201, animal_card: @animal_card } 
         else 
-            render json: { status: 401, animal_card: @animal_card, message: "Animal unable to be saved."}
+            render json: { status: 401, message: "Animal unable to be saved."}  #removed animal_card: @animal_card
         end
     end 
 
@@ -15,7 +14,6 @@ class Api::V1::AnimalCardsController < ApplicationController
         @animal_cards = AnimalCard.all
 
         render json: @animal_cards
-        #{ status: 201, animal_cards: @animal_cards}
     end 
 
     def destroy 

@@ -1,5 +1,4 @@
 class Api::V1::UsersController < ApplicationController
-    #add before_action's for authorization 
 
     def create 
         @user = User.new(user_params)
@@ -13,7 +12,9 @@ class Api::V1::UsersController < ApplicationController
     
     def show 
         @user = User.find_by_id(params[:id])
-        render json: @user
+        # if @user.id === session[:id]
+            render json: @user
+        # else 
     end 
 
     private 
