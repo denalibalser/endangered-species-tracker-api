@@ -10,6 +10,9 @@ I knew I wanted the theme of this project to be something I was passionate about
 ## Blog 
 [Link to Blog Post](https://denalibalser.github.io/react_redux_final_project)
 
+## Demo Video 
+[Link to Demo Video](https://www.youtube.com/watch?v=_mWfJzi4mDY&ab_channel=DenaliBalser)
+
 ## Frontend 
 [Link to Frontend Repo](https://github.com/denalibalser/endangered-species-tracker-ui)
 
