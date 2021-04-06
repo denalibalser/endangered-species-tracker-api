@@ -7,18 +7,30 @@ I knew I wanted the theme of this project to be something I was passionate about
 
 <img width="1440" alt="Screen Shot 2021-04-06 at 11 47 13 AM" src="https://user-images.githubusercontent.com/46694709/113755851-04081500-96ce-11eb-8d3b-9330b90b2995.png">
 
-## Dependencies
-
 ## Blog 
 [Link to Blog Post](https://denalibalser.github.io/react_redux_final_project)
 
 ## Frontend 
 [Link to Frontend Repo](https://github.com/denalibalser/endangered-species-tracker-ui)
 
+## Ruby Version 
+ruby '2.6.1'
+
+## Database Creation
+Run 'rails db:migrate' 
+
+## Deployment Instructions :
+* Fork and Clone this Repo & Frontend Repo (provided above) 
+* Run 'bundle install'
+* Run 'rails s' 
+* *In frontend repo:*
+* Run 'yarn start'
+* Enter 'Y' when prompted 
+
+
+
 
 Things you may want to cover:
-
-* Ruby version
 
 * System dependencies
 
@@ -28,10 +40,5 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
-
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
