@@ -25,6 +25,7 @@ Run 'rails db:migrate'
 * Run 'bundle install'
 * Run 'rails s' 
 * *In frontend repo:*
+* Run 'cd endangered-species-tracker-ui'
 * Run 'yarn start'
 * Enter 'Y' when prompted 
 
