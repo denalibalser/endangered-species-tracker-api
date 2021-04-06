@@ -16,7 +16,7 @@ I knew I wanted the theme of this project to be something I was passionate about
 ## Ruby Version 
 ruby '2.6.1'
 
-## Database Creation
+## Database Initialization
 Run 'rails db:migrate' 
 
 ## Deployment Instructions :
@@ -36,10 +36,6 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
-
-* Database creation
-
-* Database initialization
 
 * Services (job queues, cache servers, search engines, etc.)
 
