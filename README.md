@@ -1,4 +1,4 @@
-# Endangered Species Tracker
+# Endangered Species Tracker - API
 
 <img width="1438" alt="Screen Shot 2021-04-06 at 11 30 45 AM" src="https://user-images.githubusercontent.com/46694709/113755310-67de0e00-96cd-11eb-8264-d4d813cdf2cd.png">
 
