@@ -23,7 +23,7 @@ ruby '2.6.1'
 Run 'rails db:migrate' 
 
 ## Deployment Instructions :
-* Fork and Clone this Repo & Frontend Repo (provided above) 
+* Clone this Repo & Frontend Repo (provided above) 
 * Run 'cd endangered-species-api'
 * Run 'bundle install'
 * Run 'rails s' 
