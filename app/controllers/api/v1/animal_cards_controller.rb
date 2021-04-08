@@ -1,31 +1,31 @@
 class Api::V1::AnimalCardsController < ApplicationController
 
     def create
-        @animal_card = AnimalCard.new(animal_card_params)
+        @species_card = AnimalCard.new(species_card_params)
 
-        if @animal_card.save
-            render json: { status: 201, animal_card: @animal_card } 
+        if @species_card.save
+            render json: { status: 201, species_card: @species_card } 
         else 
-            render json: { status: 401, message: "Animal unable to be saved."}  #removed animal_card: @animal_card
+            render json: { status: 401, message: "Species unable to be saved."}  #removed animal_card: @animal_card
         end
     end 
 
     def index 
-        @animal_cards = AnimalCard.all
+        @species_cards = AnimalCard.all
 
-        render json: @animal_cards
+        render json: @species_cards
     end 
 
     def destroy 
-        @animal_card = AnimalCard.find_by_id(params[:id])
-        @animal_card.destroy
+        @species_card = AnimalCard.find_by_id(params[:id])
+        @species_card.destroy
 
-        render json: {animal_card: @animal_card}
+        render json: {species_card: @species_card}
     end 
 
     private 
 
-    def animal_card_params
+    def species_card_params
         params.require(:animal_card).permit(:common_name, :scientific_name, :endangered_level, :url, :user_id)
 
     end
