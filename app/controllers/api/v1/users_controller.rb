@@ -6,7 +6,7 @@ class Api::V1::UsersController < ApplicationController
             session[:id] = @user.id
             render json: { status: 201, user: @user, logged_in: true } 
         else 
-            render json: { status: 500, message: "There was an error in creating your account."}
+            render json: { status: 500, message: "There was an error in creating your account.", logged_in: false}
         end 
     end 
     
