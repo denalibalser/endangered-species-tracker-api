@@ -6,7 +6,7 @@ class Api::V1::AnimalCardsController < ApplicationController
         if @species_card.save
             render json: { status: 201, species_card: @species_card } 
         else 
-            render json: { status: 401, message: "Species unable to be saved."}  #removed animal_card: @animal_card
+            render json: { status: 401, message: "Species unable to be saved."}  
         end
     end 
 
