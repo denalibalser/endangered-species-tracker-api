@@ -12,9 +12,7 @@ class Api::V1::UsersController < ApplicationController
     
     def show 
         @user = User.find_by_id(params[:id])
-        # if @user.id === session[:id]
-            render json: @user
-        # else 
+        render json: @user
     end 
 
     private 
