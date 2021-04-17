@@ -8,7 +8,7 @@ class Api::V1::SessionsController < ApplicationController
 
             render json: { status: 201, user: @user, logged_in: true } 
         else 
-            render json: { status: 401, message: "User not found or incorrect password"}
+            render json: { status: 401, error: "*User not found or incorrect password", logged_in: false}
         end
     end 
 

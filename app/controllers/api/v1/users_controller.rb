@@ -6,7 +6,12 @@ class Api::V1::UsersController < ApplicationController
             session[:id] = @user.id
             render json: { status: 201, user: @user, logged_in: true } 
         else 
-            render json: { status: 500, message: "There was an error in creating your account.", logged_in: false}
+            @existing_user = User.find_by(username: params[:user][:username])
+            if @existing_user 
+                render json: { status: 500, error: "*Username already exists", logged_in: false }
+            else
+                render json: { status: 500, error: "There was an error in creating your account.", logged_in: false }
+            end
         end 
     end 
     

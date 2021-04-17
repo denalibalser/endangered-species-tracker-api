@@ -4,7 +4,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       resource '*', headers: :any, methods: [:get, :post, :patch, :put, :delete], credentials: true
     end
 
-    # configuration for deplayed version of app:
+    # configuration for deployed version of app:
     # allow do
     #     origins 'https://endangered-species-tracker-netlify.com'
     #     resource '*', headers: :any, methods: [:get, :post, :patch, :put]
