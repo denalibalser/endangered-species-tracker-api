@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
     include ::ActionController::Serialization
-    
     skip_before_action :verify_authenticity_token
     helper_method :logged_in?, :current_user
 
