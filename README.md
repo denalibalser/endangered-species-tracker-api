@@ -22,7 +22,7 @@ ruby '2.6.1'
 ## Database Initialization
 Run 'rails db:migrate' 
 
-## Deployment Instructions :
+## Usage Instructions :
 * Clone this Repo & Frontend Repo (provided above) 
 * Run 'cd endangered-species-api'
 * Run 'bundle install'
@@ -32,14 +32,6 @@ Run 'rails db:migrate'
 * Run 'yarn start'
 * Enter 'Y' when prompted 
 
-
-
-
-Things you may want to cover:
-
-* System dependencies
-
-* Configuration
-
-* Services (job queues, cache servers, search engines, etc.)
+## Dependencies 
+  *
 
