@@ -33,5 +33,21 @@ Run 'rails db:migrate'
 * Enter 'Y' when prompted 
 
 ## Dependencies 
-  *
-
+  * active_model_serializers
+  * bcrypt (~> 3.1.7)
+  * bootsnap (>= 1.4.2)
+  * byebug
+  * jbuilder (~> 2.7)
+  * listen (~> 3.2)
+  * pry
+  * puma (~> 4.1)
+  * rack-cors
+  * rails (~> 6.0.3, >= 6.0.3.5)
+  * sass-rails (>= 6)
+  * spring
+  * spring-watcher-listen (~> 2.0.0)
+  * sqlite3 (~> 1.4)
+  * turbolinks (~> 5)
+  * tzinfo-data
+  * web-console (>= 3.3.0)
+  * webpacker (~> 4.0)
