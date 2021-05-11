@@ -10,5 +10,9 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://raw.githubusercontent.com/denalibalser/endangered-species-tracker-api/master/LICENSE"
+  }]
 }
