@@ -16,7 +16,7 @@ gem 'rack-cors'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'active_model_serializers'
 gem 'mimemagic', '~> 0.4.3'
-gem 'rake', '~> 13.0.3'
+# gem 'rake', '~> 13.0.3'
 
 
 group :development, :test do
