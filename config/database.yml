@@ -10,6 +10,7 @@ development:
 
 test:
   <<: *default
+  
   database: myapp_test_db
 
 production:
