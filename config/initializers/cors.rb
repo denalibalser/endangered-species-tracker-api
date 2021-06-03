@@ -6,9 +6,9 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     # configuration for deployed version of app:
     allow do
-      origins ''
+      origins 'https://denalibalser.github.io/endangered-species-tracker-ui/'
 
-      resource 'https://denalibalser.github.io/endangered-species-tracker-ui/', 
+      resource '*', 
       headers: :any, 
       methods: [:get, :post, :patch, :put, :delete], credentials: true
     end
