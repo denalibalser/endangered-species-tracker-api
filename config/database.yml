@@ -6,12 +6,12 @@ default: &default
 
 development:
   <<: *default
-  database: development_db
+  database: myapp_development_db
 
 test:
   <<: *default
   
-  database: test_db
+  database: myapp_test_db
 
 production:
   <<: *default
